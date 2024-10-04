@@ -30,20 +30,38 @@ export default function Home() {
 
           <Expandable id="about" labelWhenOpened="Less is more" labelWhenClosed="More about me">
             <p>
-              Throughout my career, I've honed my expertise in integrating frontend solutions with various CMS platforms, ensuring seamless performance across
-              different content management systems. My skill set includes HTML, CSS, JavaScript (and TypeScript), along with modern frontend libraries like Vue
-              and React. I’m passionate about creating intuitive, high-performance user experiences and building robust web applications.
+              I specialize in integrating frontend solutions with CMS platforms to deliver seamless, high-performance websites. With a solid background in{" "}
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+                HTML
+              </a>
+              ,{" "}
+              <a href="https://www.w3.org/TR/CSS2/" target="_blank">
+                CSS
+              </a>{" "}
+              &{" "}
+              <a href="https://www.typescriptlang.org/" target="_blank">
+                Typescript
+              </a>
+              , and modern libraries like{" "}
+              <a href="https://vuejs.org/" target="_blank">
+                Vue
+              </a>{" "}
+              and{" "}
+              <a href="https://reactjs.org/" target="_blank">
+                React
+              </a>
+              , I’m passionate about building intuitive user experiences and robust web applications.
             </p>
 
             <p>
-              I prioritize best practices in SEO, accessibility, and performance optimization, while my component-driven approach ensures that every project is
-              built with maintainable, scalable, and reusable code. This method promotes adaptability and speeds up development without compromising on quality
-              or consistency.
+              My focus is on best practices in <strong>SEO</strong>, <strong>accessibility</strong>, and <strong>performance optimization</strong>. I use a{" "}
+              <strong>component-driven approach</strong> to create maintainable, scalable, and reusable code, ensuring projects are adaptable and developed
+              efficiently without sacrificing quality.
             </p>
 
             <p>
-              Collaboration is key to successful projects, and I thrive in environments where I can work alongside cross-functional teams, including designers,
-              backend developers, and stakeholders, to bring digital experiences to life.
+              I excel in <strong>collaborative environments</strong>, working closely with UX/UI designers, developers, and stakeholders to bring engaging
+              digital experiences to life.
             </p>
           </Expandable>
         </Wrapper>

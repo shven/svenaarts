@@ -67,6 +67,8 @@ button {
 
 a {
   color: var(--link-color);
+  font-weight: bold;
+  font-style: italic;
 
   &:hover {
     text-decoration: none;
