@@ -1,0 +1,7 @@
+.panel {
+  display: grid;
+  align-items: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding-block: var(--gap);
+}

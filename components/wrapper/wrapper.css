@@ -1,0 +1,22 @@
+.wrapper {
+  max-width: 600px;
+  padding-inline: var(--gap);
+  margin-inline: auto;
+}
+
+/* Size modifiers */
+.wrapper--small {
+  max-width: 400px;
+}
+
+.wrapper--medium {
+  max-width: 800px;
+}
+
+.wrapper--large {
+  max-width: 1200px;
+}
+
+.wrapper--huge {
+  max-width: 1400px;
+}

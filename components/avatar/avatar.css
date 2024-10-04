@@ -1,0 +1,4 @@
+.avatar img {
+  overflow: hidden;
+  border-radius: 50%;
+}

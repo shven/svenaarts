@@ -1,0 +1,25 @@
+.title {
+  line-height: 1.25;
+  text-wrap: balance;
+  margin-block: var(--gap);
+
+  &:first-child {
+    margin-block-start: 0;
+  }
+
+  &:last-child {
+    margin-block-end: 0;
+  }
+}
+
+.title--small {
+  font-size: var(--font-size-medium);
+}
+
+.title--medium {
+  font-size: var(--font-size-large);
+}
+
+.title--large {
+  font-size: var(--font-size-huge);
+}
