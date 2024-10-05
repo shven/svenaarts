@@ -1,8 +1,8 @@
 import "./layout.css";
 
-import type { Metadata } from "next/types";
+import type { Viewport } from "next/types";
 
-export const metadata: Metadata = {
+export const viewport: Viewport = {
   themeColor: "#f5f5f5",
 };
 
