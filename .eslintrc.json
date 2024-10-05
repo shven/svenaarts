@@ -1,0 +1,41 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "plugins": ["no-relative-import-paths", "unused-imports", "import", "simple-import-sort"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": "latest",
+    "project": true
+  },
+  "rules": {
+    "@typescript-eslint/consistent-type-imports": "error",
+    "arrow-body-style": ["error", "always"],
+    "import/no-default-export": "error",
+    "imports/order": "off",
+    "no-console": "warn",
+    "no-relative-import-paths/no-relative-import-paths": ["warn", { "allowSameFolder": true, "prefix": "@main", "rootDir": "/" }],
+    "no-unused-vars": "off",
+    "prefer-template": "error",
+    "react/no-unescaped-entities": "off",
+    "simple-import-sort/imports": "error",
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ]
+  },
+  "overrides": [
+    // App router pages that should be default exports
+    {
+      "files": ["app/**/{page,layout,not-found}.tsx"],
+      "rules": {
+        "import/no-default-export": "off"
+      }
+    }
+  ]
+}

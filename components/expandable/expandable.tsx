@@ -1,6 +1,6 @@
-import type { ReactNode } from "react";
-
 import "./expandable.scss";
+
+import type { ReactNode } from "react";
 
 type Props = {
   id: string | number;

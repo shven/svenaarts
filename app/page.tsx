@@ -1,10 +1,10 @@
-import Image from "next/image";
-import Wrapper from "@/components/wrapper/wrapper";
-import { Title } from "@/components/title/title";
-import Panel from "@/components/panel/panel";
-import Avatar from "@/components/avatar/avatar";
+import type { Metadata } from "next/types";
+
+import { Avatar } from "@/components/avatar/avatar";
 import { Expandable } from "@/components/expandable/expandable";
-import { Metadata } from "next/types";
+import { Panel } from "@/components/panel/panel";
+import { Title } from "@/components/title/title";
+import { Wrapper } from "@/components/wrapper/wrapper";
 
 export const metadata: Metadata = {
   title: "Sven Aarts | Frontend Web Developer Specializing in Rich, Responsive, and Robust User Interfaces",

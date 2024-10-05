@@ -1,4 +1,5 @@
 import "./title.scss";
+
 import type { ReactNode } from "react";
 
 type TextProps = {

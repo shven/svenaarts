@@ -6,6 +6,6 @@ type Props = {
   children: React.ReactNode;
 };
 
-export default function Wrapper({ size = "medium", children }: Props) {
+export function Wrapper({ size = "medium", children }: Props) {
   return <div className={`wrapper wrapper--${size}`}>{children}</div>;
 }
