@@ -1,8 +1,8 @@
 import type { Metadata } from "next/types";
 
 import { Avatar } from "@/components/avatar/avatar";
-import { Expandable } from "@/components/expandable/expandable";
 import { Panel } from "@/components/panel/panel";
+import { Summary } from "@/components/summary/summary";
 import { Title } from "@/components/title/title";
 import { Wrapper } from "@/components/wrapper/wrapper";
 
@@ -28,7 +28,7 @@ export default function Home() {
             <strong>robust user interfaces</strong>.
           </Title>
 
-          <Expandable id="about" labelWhenOpened="Less is more" labelWhenClosed="More about me">
+          <Summary id="about" label="More about me">
             <p>
               I specialize in integrating frontend solutions with CMS platforms to deliver seamless, high-performance websites. With a solid background in{" "}
               <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
@@ -63,7 +63,7 @@ export default function Home() {
               I excel in <strong>collaborative environments</strong>, working closely with UX/UI designers, developers, and stakeholders to bring engaging
               digital experiences to life.
             </p>
-          </Expandable>
+          </Summary>
         </Wrapper>
       </Panel>
     </main>
