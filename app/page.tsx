@@ -1,6 +1,8 @@
 import type { Metadata } from "next/types";
 
 import { Avatar } from "@/components/avatar/avatar";
+import { Back } from "@/components/back/back";
+import { Navigation } from "@/components/navigation/navigation";
 import { Panel } from "@/components/panel/panel";
 import { Summary } from "@/components/summary/summary";
 import { Title } from "@/components/title/title";
@@ -15,7 +17,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
-      <Panel>
+      <Panel id="home" sticky>
         <Wrapper size="medium">
           <Avatar src="/avatar.webp" alt="Sven Aarts" />
 
@@ -28,44 +30,93 @@ export default function Home() {
             <strong>robust user interfaces</strong>.
           </Title>
 
-          <Summary id="about" label="More about me">
-            <p>
-              I specialize in integrating frontend solutions with CMS platforms to deliver seamless, high-performance websites. With a solid background in{" "}
-              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
-                HTML
-              </a>
-              ,{" "}
-              <a href="https://www.w3.org/TR/CSS2/" target="_blank">
-                CSS
-              </a>{" "}
-              &{" "}
-              <a href="https://www.typescriptlang.org/" target="_blank">
-                Typescript
-              </a>
-              , and modern libraries like{" "}
-              <a href="https://vuejs.org/" target="_blank">
-                Vue
-              </a>{" "}
-              and{" "}
-              <a href="https://reactjs.org/" target="_blank">
-                React
-              </a>
-              , I’m passionate about building intuitive user experiences and robust web applications.
-            </p>
-
-            <p>
-              My focus is on best practices in <strong>SEO</strong>, <strong>accessibility</strong>, and <strong>performance optimization</strong>. I use a{" "}
-              <strong>component-driven approach</strong> to create maintainable, scalable, and reusable code, ensuring projects are adaptable and developed
-              efficiently without sacrificing quality.
-            </p>
-
-            <p>
-              I excel in <strong>collaborative environments</strong>, working closely with UX/UI designers, developers, and stakeholders to bring engaging
-              digital experiences to life.
-            </p>
-          </Summary>
+          <Navigation />
         </Wrapper>
       </Panel>
+      <Panel id="about" dark>
+        <Wrapper size="medium">
+          <Title level="h2" size="large">
+            About
+          </Title>
+
+          <p>
+            I specialize in integrating frontend solutions with CMS platforms to deliver seamless, high-performance websites. With a solid background in{" "}
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+              HTML
+            </a>
+            ,{" "}
+            <a href="https://www.w3.org/TR/CSS2/" target="_blank">
+              CSS
+            </a>{" "}
+            &{" "}
+            <a href="https://www.typescriptlang.org/" target="_blank">
+              Typescript
+            </a>
+            , and modern libraries like{" "}
+            <a href="https://vuejs.org/" target="_blank">
+              Vue
+            </a>{" "}
+            and{" "}
+            <a href="https://reactjs.org/" target="_blank">
+              React
+            </a>
+            , I’m passionate about building intuitive user experiences and robust web applications.
+          </p>
+
+          <p>
+            My focus is on best practices in <strong>SEO</strong>, <strong>accessibility</strong>, and <strong>performance optimization</strong>. I use a{" "}
+            <strong>component-driven approach</strong> to create maintainable, scalable, and reusable code, ensuring projects are adaptable and developed
+            efficiently without sacrificing quality.
+          </p>
+
+          <p>
+            I excel in <strong>collaborative environments</strong>, working closely with UX/UI designers, developers, and stakeholders to bring engaging digital
+            experiences to life.
+          </p>
+        </Wrapper>
+      </Panel>
+      <Panel id="blog">blog</Panel>
+      <Panel id="components" dark>
+        components
+        <Summary id="about" label="More about me">
+          <p>
+            I specialize in integrating frontend solutions with CMS platforms to deliver seamless, high-performance websites. With a solid background in{" "}
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+              HTML
+            </a>
+            ,{" "}
+            <a href="https://www.w3.org/TR/CSS2/" target="_blank">
+              CSS
+            </a>{" "}
+            &{" "}
+            <a href="https://www.typescriptlang.org/" target="_blank">
+              Typescript
+            </a>
+            , and modern libraries like{" "}
+            <a href="https://vuejs.org/" target="_blank">
+              Vue
+            </a>{" "}
+            and{" "}
+            <a href="https://reactjs.org/" target="_blank">
+              React
+            </a>
+            , I’m passionate about building intuitive user experiences and robust web applications.
+          </p>
+
+          <p>
+            My focus is on best practices in <strong>SEO</strong>, <strong>accessibility</strong>, and <strong>performance optimization</strong>. I use a{" "}
+            <strong>component-driven approach</strong> to create maintainable, scalable, and reusable code, ensuring projects are adaptable and developed
+            efficiently without sacrificing quality.
+          </p>
+
+          <p>
+            I excel in <strong>collaborative environments</strong>, working closely with UX/UI designers, developers, and stakeholders to bring engaging digital
+            experiences to life.
+          </p>
+        </Summary>
+      </Panel>
+      <Panel id="contact">contact</Panel>
+      <Back />
     </main>
   );
 }

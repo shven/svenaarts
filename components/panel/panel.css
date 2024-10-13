@@ -2,6 +2,21 @@
   display: grid;
   align-items: center;
   min-height: 100vh;
-  min-height: 100dvh;
+  min-height: 100vh;
   padding-block: var(--gap);
+  position: relative;
+  z-index: 1;
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-900);
+  scroll-snap-align: start;
+}
+
+.panel--dark {
+  background-color: var(--color-gray-900);
+  color: var(--color-gray-100);
+}
+
+.panel--sticky {
+  /* position: sticky;
+  top: 0; */
 }

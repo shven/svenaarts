@@ -5,7 +5,7 @@ import type { ReactNode } from "react";
 type TextProps = {
   center?: boolean;
   children: ReactNode;
-  level: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+  level: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p";
   size: "small" | "medium" | "large";
 };
 

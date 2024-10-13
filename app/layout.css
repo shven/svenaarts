@@ -42,7 +42,7 @@ body {
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
   scroll-padding-block-start: var(--header-height);
   font-family: var(--font-primary);
 }

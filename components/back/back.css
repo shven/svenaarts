@@ -1,0 +1,13 @@
+.back {
+  background-color: var(--color-white);
+  padding: calc(var(--gap) / 2) var(--gap);
+  border-radius: var(--gap);
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 0 10px color-mix(in srgb, var(--color-black), #0000 80%);
+  position: fixed;
+  bottom: var(--gap);
+  left: 50%;
+  translate: -50% 0;
+  z-index: 20;
+}
