@@ -20,6 +20,8 @@
 
   /* Colors */
   --color-primary: #fa1a40;
+  --color-primary-dark: #b31238;
+  --color-primary-light: #ff3047;
   --color-secondary: #ffd601;
   --color-white: #fff;
   --color-gray-100: #fafafa;
@@ -48,7 +50,6 @@ html {
 }
 
 body {
-  overflow-x: hidden;
   overflow-y: scroll; /* Show vertical scrollbar to avoid horizontal layout shift */
   background-color: var(--color-gray-200);
   color: var(--color-gray-800);

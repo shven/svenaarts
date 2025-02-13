@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    // ESLint/Prettier formatter
+    "esbenp.prettier-vscode",
+    // ESLint support to VSCode
+    "dbaeumer.vscode-eslint",
+    // Run playwright test in vscode
+    "ms-playwright.playwright"
+  ]
+}
